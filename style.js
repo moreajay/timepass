@@ -11,7 +11,7 @@
 
 console.log("Hello, World!");
 
-const time = new Date();
+const time = new Date("2023-08-21");
 const day = time.toLocaleString("en-us", {weekday: "long"});
 const morning = time.getHours() >=6 && time.getHours ()<=12;
 
