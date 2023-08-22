@@ -11,7 +11,7 @@
 
 console.log("Hello, World!");
 
-const time = new Date("2023-08-21");
+const time = new Date();
 const day = time.toLocaleString("en-us", {weekday: "long"});
 const morning = time.getHours() >=6 && time.getHours ()<=12;
 
@@ -51,6 +51,10 @@ else if (day.toLocaleLowerCase()==="saturday"){
    dayMessage = `Happy ${day}, Hola its weekned`;
    document.getElementById("sat").style.display ="block";
 
+}
+else{
+   dayMessage = `Happy ${day}`;
+   document.getElementById("sun").style.display ="block";
 }
 
 console.log(dayMessage);
