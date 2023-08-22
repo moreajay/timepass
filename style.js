@@ -9,23 +9,23 @@
   
 //   }
 
-
-
 console.log("Hello, World!");
 
 const time = new Date();
 const day = time.toLocaleString("en-us", {weekday: "long"});
 const morning = time.getHours() >=6 && time.getHours ()<=12;
 
+
 let dayMessage;
 
 if(day.toLocaleLowerCase()==="monday"){
 
-    dayMessage = `Happy ${day}`;
-}
+    dayMessage = `Happy ${day}, Bhai sahab aa gaya office ka kaam`;
+    document.getElementById("mon").style.display ="block";
+ }
 else if (day.toLocaleLowerCase()==="tuesday"){
 
-   dayMessage = `Happy ${day}, Four days tp go`;
+   dayMessage = `Happy ${day}, Four days to go`;
    document.getElementById("tue").style.display ="block";
 
 }
